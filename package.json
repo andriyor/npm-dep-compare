@@ -1,0 +1,18 @@
+{
+  "name": "npm-dep-compare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lab/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colorette": "^1.2.1",
+    "markdown-table": "^2.0.0",
+    "module-dependents": "^1.0.0",
+    "npm-api": "^1.0.1",
+    "string-width": "^4.2.0"
+  }
+}
