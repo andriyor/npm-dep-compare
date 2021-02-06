@@ -23,7 +23,7 @@ const [packageName, leftVersion, rightVersion] = myArgs;
     const added = leftDeps.filter(x => !rightDeps.includes(x));
     const removed = rightDeps.filter(x => !leftDeps.includes(x));
     const zipped = zip(getUrls(added), getUrls(removed));
-    const header = [[green('Added'), red('Removed')]];
+    const header = [[green(`Added (${added.length})`), red(`Removed (${removed.length})`)]];
     const markdownTable = table(header.concat(zipped), {stringLength: width});
     console.log(markdownTable);
 })();
